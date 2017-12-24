@@ -1,5 +1,3 @@
-﻿//数组的顺序存储表示  
-//杨鑫  
 #include <stdio.h>  
 #include <stdlib.h>  
 #include <stdarg.h>  
