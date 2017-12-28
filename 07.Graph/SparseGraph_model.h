@@ -52,7 +52,7 @@ public:
 		return false;
 	} 
 	
-	//
+	//打印输出 
 	void show(){
 		for(int i=0;i<n;i++){
 			cout<<"vertex "<<i<<":\t";
