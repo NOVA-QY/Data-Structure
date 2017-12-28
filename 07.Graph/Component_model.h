@@ -11,7 +11,7 @@ class Component{
 private:
 	Graph &G;
 	bool *visited;
-	int ccount;			//
+	int ccount;			//记录连通分量个数
 	int *id; 			//检查是否在同一个连通分量中 
 	
 	void dfs(int v){
@@ -34,7 +34,7 @@ public:
 			id[i]=-1;
 		}
 		
-		// 
+		//对每个节点进行遍历
 		for(int i=0;i<G.V();i++)
 			if(!visited[i]){
 				dfs(i);
