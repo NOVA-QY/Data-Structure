@@ -54,6 +54,16 @@ public:
 		return g[v][w];
 	} 
 	
+	//打印显示 
+	void show(){
+		for(int i=0;i<n;i++){
+			cout<<"vertex "<<i<<":\t";
+			for(int j=0;j<g[i].size();j++)
+				cout<<g[i][j]<<"\t";
+			cout<<endl;
+		}
+	}
+	
 	class adjIterator{
 	
 	private:
@@ -63,7 +73,7 @@ public:
 	public:
 		adjIterator(DenseGraph &graph,int v):G(graph){
 			this->v=v;
-			this->index=-1;		//
+			this->index=-1;		//设置源点索引值 
 		}
 		
 		int begin(){		//index值为此行第一个值为true的元素 
@@ -83,8 +93,7 @@ public:
 		bool end(){
 			return index>=G.V();
 		}
-		
-		
+			
 	}; 
 	
 };
