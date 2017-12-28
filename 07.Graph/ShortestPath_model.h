@@ -15,10 +15,10 @@ class ShortestPath{
 
 private:
     Graph &G;
-    int s;
-    bool *visited;
-    int *from;
-    int *ord;
+    int s;		//源点
+    bool *visited;	//记录是否访问
+    int *from;		//记录前驱节点
+    int *ord;		//记录遍历顺序
 
 public:
     ShortestPath(Graph &graph, int s):G(graph){
@@ -90,7 +90,8 @@ public:
             s.pop();
         }
     }
-
+	
+    //打印路径
     void showPath(int w){
 
         assert( w >= 0 && w < G.V() );
