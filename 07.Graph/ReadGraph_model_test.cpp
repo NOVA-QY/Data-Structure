@@ -2,7 +2,6 @@
 #include "SparseGraph_model.h"
 #include "DenseGraph_model.h"
 #include "ReadGraph_model.h"
-
 using namespace std;
 
 int main(){
