@@ -71,7 +71,7 @@ public:
 		int v;
 		int index;
 	public:
-		adjIterator(DenseGraph &graph,int v):G(graph){
+		adjIterator(DenseGraph &graph,int v):G(graph){	//定义构造列表
 			this->v=v;
 			this->index=-1;		//设置源点索引值 
 		}
