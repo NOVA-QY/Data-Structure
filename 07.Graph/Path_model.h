@@ -4,6 +4,7 @@
 		SparseGraph   O(V+E)
 		DenseGraph    O(V^2) 
 	2.可以用来检测一个图中是否有环 
+	3.可用来计算连通分量的个数
 */
 
 #ifndef INC_06_FINDING_A_PATH_PATH_H
@@ -24,7 +25,7 @@ private:
     Graph &G;
     int s;
     bool* visited;
-    int * from;
+    int * from;		//记录前驱
 
     void dfs( int v ){
 
@@ -83,7 +84,7 @@ public:
         while(!s.empty()){
         	vec.push_back(s.top());
         	s.pop();
-		}
+	}
         
     }
 

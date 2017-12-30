@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 	
-	//TestG1.txt
+	//TestG1.txt(稀疏图)
 	string filename1="testG1.txt";
 	SparseGraph g1=SparseGraph(13,false);
 	ReadGraph<SparseGraph> readGraph1(g1,filename1);
@@ -17,7 +17,7 @@ int main(){
 	
 	cout<<endl;
 	
-	//testG2.txt
+	//testG2.txt(稠密图)
 	string filename2="testG2.txt";
 	DenseGraph g2=DenseGraph(7,false);
 	ReadGraph<DenseGraph> readGraph2(g2,filename2);

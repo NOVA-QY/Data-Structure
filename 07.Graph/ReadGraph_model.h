@@ -21,7 +21,7 @@ public:
 		
 		assert(getline(file,line));		//确认读取成功
 		stringstream ss(line);			//字符流输入 
-		ss>>V>>E;						//字符流解析点数、边数
+		ss>>V>>E;				//字符流解析点数、边数
 		
 		assert(V==graph.V());
 		

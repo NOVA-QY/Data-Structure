@@ -1,6 +1,7 @@
 ﻿#ifndef INC_03_VERTEX_ADJACENT_ITERATOR_SPARSEGRAPH_H
 #define INC_03_VERTEX_ADJACENT_ITERATOR_SPARSEGRAPH_H
 
+
 #include<iostream>
 #include<cstdio>
 #include<cassert>
@@ -48,7 +49,7 @@ public:
 		assert(w>=0&&w<n);
 		for(int i=0;i<g[v].size();i++)	//O(n) 
 			if(g[v][i]==w)
-				return true;
+				return true;	
 		return false;
 	} 
 	
